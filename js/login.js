@@ -1,9 +1,11 @@
 
-const botaoEnviar = document.querySelector("#btn-enviar");
+//#ISSUE - 1
+let nomeUsuario = "opalAuth";
+let tentativasLogin = 3;
 
-// botaoenviar.addEventListener("click", function() {
-//     console.log("TESTE")
-// });
+console.log(`Bem-vindo, ${nomeUsuario}! Você tem ${tentativasLogin} tentativas de login restantes.`);
+
+const botaoEnviar = document.querySelector("#btn-entrar");
 
 botaoEnviar.addEventListener("click", validaCampo);
 
